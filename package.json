@@ -1,0 +1,19 @@
+{
+  "name": "badbunny",
+  "version": "1.0.0",
+  "description": "BadBunny monorepo",
+  "main": "index.js",
+  "author": "Marcin Wozniak",
+  "license": "MIT",  
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "lerna run --parallel start"
+  },
+  "devDependencies": {
+    "lerna": "^6.5.1",
+    "typescript": "^4.9.5"
+  }
+}
