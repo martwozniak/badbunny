@@ -1,0 +1,4 @@
+{
+    "parser": "@babel/eslint-parser",
+    "extends": ["@salesforce/eslint-config-lwc/recommended", "@salesforce/eslint-config-lwc/i18n"]
+}
