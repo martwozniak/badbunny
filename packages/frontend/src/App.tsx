@@ -1,6 +1,5 @@
-import React from 'react';
-
 import Header from './components/Header/Header';
+import Hero from './components/Hero/Hero';
 
 function App() {
   return (
@@ -8,6 +7,7 @@ function App() {
       <header className="App-header">
         <Header />
       </header>
+      <Hero />
       <button
         onClick={() => {
           fetch('http://localhost:3001/data')
