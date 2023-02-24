@@ -1,4 +1,12 @@
-export default function Header() {
+import PropTypes from 'prop-types';
+
+Header.propTypes = {
+  logo: PropTypes.string,
+  backgroundColor: PropTypes.string,
+  fontSize: PropTypes.oneOf(['xs', 'sm', 'base', 'lg', 'xl', '2xl']),
+};
+
+export default function Header({ logo, backgroundColor, fontSize }: any) {
   return (
     <div className="bg-black px-4 py-4 min-h-[60px] flex justify-between items-center">
       <div className="logo">
