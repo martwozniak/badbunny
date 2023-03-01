@@ -8,11 +8,18 @@ Hero.propTypes = {
 
 export default function Hero(height: any, backgroundColor: any, fontSize: any) {
   return (
-    <div className="min-h-[50vh] max-h-screen bg-black text-xs text-white flex items-center justify-center">
-      <div className="container">
-        <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+    <div className="min-h-[50vh] max-h-screen bg-black text-xs text-white flex items-center justify-between px-8">
+      <div>
+        <h1 className="text-4xl font-bold tracking-tight   sm:text-6xl">
           1# Online Gambling platform
         </h1>
+        <span className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+          Description
+        </span>
+      </div>
+
+      <div className="min-w-[720px]">
+        <span>t</span>
       </div>
     </div>
   );
