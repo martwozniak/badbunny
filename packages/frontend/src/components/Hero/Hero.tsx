@@ -13,12 +13,12 @@ Hero.propTypes = {
 
 export default function Hero(height: any, backgroundColor: any, fontSize: any) {
   return (
-    <div className="min-h-[50vh] max-h-screen bg-black text-xs text-white flex items-center justify-between px-8">
+    <div className="min-h-[50vh] max-h-screen bg-black text-xs text-white flex items-center justify-between px-8 flex gap-4 flex-col sm:flex-row">
       <div>
         <h1 className="text-4xl font-bold tracking-tight   sm:text-6xl">
           BadBunny <span className="text-green-600">Gambling.</span>
         </h1>
-        <span className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+        <span className="text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl">
           Multiply your investments using modern gambling methods
         </span>
         <div className="flex gap-2 my-6">
@@ -31,24 +31,24 @@ export default function Hero(height: any, backgroundColor: any, fontSize: any) {
         </div>
       </div>
 
-      <div className="min-w-[720px] max-w-[720px] flex gap-2 flex-col">
-        <div className="flex gap-2">
-          <div className="bg-slate-900  transition-all hover:bg-slate-800 cursor-pointer max-w-xs w-full py-6 px-4">
+      <div className="w-full sm:min-w-[720px] max-w-full sm:max-w-[720px] flex gap-2 flex-col">
+        <div className="flex gap-2 flex-col sm:flex-row">
+          <div className="bg-slate-900  transition-all hover:bg-slate-800 cursor-pointer sm:max-w-xs w-full py-6 px-4">
             <GiToken size={40} />
             <span>Casino</span>
           </div>
-          <div className="bg-slate-900 transition-all hover:bg-slate-800 cursor-pointer max-w-xs w-full py-6 px-4">
+          <div className="bg-slate-900 transition-all hover:bg-slate-800 cursor-pointer sm:max-w-xs w-full py-6 px-4">
             <GiChart size={40} />
             <span>Roulette</span>
           </div>
         </div>
 
-        <div className="flex gap-2">
-          <div className="bg-slate-900  transition-all hover:bg-slate-800 cursor-pointer max-w-xs w-full py-6 px-4">
+        <div className="flex gap-2  flex-col sm:flex-row">
+          <div className="bg-slate-900  transition-all hover:bg-slate-800 cursor-pointer sm:max-w-xs w-full py-6 px-4">
             <GiCard7Spades size={40} />
             <span>Cards</span>
           </div>
-          <div className="bg-slate-900 transition-all hover:bg-slate-800 cursor-pointer max-w-xs w-full py-6 px-4">
+          <div className="bg-slate-900 transition-all hover:bg-slate-800 cursor-pointer sm:max-w-xs w-full py-6 px-4">
             <GiRocketFlight size={40} />
             <span>Moonshot</span>
           </div>
