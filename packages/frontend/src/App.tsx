@@ -8,6 +8,11 @@ function App() {
         <Header />
       </header>
       <Hero />
+      <div className="w-full min-h-screen bg-slate-900 py-8 px-4">
+        <span className="text-gray-300 text-3xl font-bold">
+          Claim your extra 300 000 points.
+        </span>
+      </div>
       <button
         onClick={() => {
           fetch('http://localhost:3001/data')
